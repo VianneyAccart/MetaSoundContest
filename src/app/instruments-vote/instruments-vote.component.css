@@ -9,7 +9,7 @@
     height: 400px;
 }
 
-.heartCircle {
+.iconCircle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -32,13 +32,9 @@
     cursor: pointer;
 }
 
-/* .absoluteContainer {
-    position: absolute;
+.instrumentsContainer {
+    padding-bottom: 75px;
 }
-
-.relativeContainer {
-    position: relative;
-} */
 
 @media screen and (max-width: 460px) {
     .card-img-top {
