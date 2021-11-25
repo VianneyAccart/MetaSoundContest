@@ -18,11 +18,12 @@
   }
 
   .container-fluid {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     display: flex;
     height: 75px;
     background-color: #0162e0;
+    margin-top: 75px;
   }
 
   .heartCircle {
