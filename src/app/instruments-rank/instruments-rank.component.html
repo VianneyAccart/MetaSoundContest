@@ -1,1 +1,21 @@
-<p>instruments-rank works!</p>
+<div class="relativeContainer">
+    <div *ngFor="let instrument of instruments | async" class="mb-5 d-flex justify-content-center absoluteContainer">
+        <div class="col-10 col-md-8 col-lg-5">
+            <h2 class="mb-3">{{instrument.name}}</h2>
+            <div class="card">
+                <img src="{{instrument.image}}" class="card-img-top" alt="Image of {{instrument.image}}">
+                <div class="card-body">
+                    <div class="row d-flex justify-content-around">
+                        <div class="iconCircle d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                class="bi bi-play-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

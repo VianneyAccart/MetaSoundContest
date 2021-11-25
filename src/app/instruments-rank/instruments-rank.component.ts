@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { InstrumentsService } from '../shared/services/instruments.service';
 
 @Component({
   selector: 'app-instruments-rank',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstrumentsRankComponent implements OnInit {
 
-  constructor() { }
+  instruments: Observable<any[]>;
+
+  constructor(private instrumentsService: InstrumentsService) {
+    this.instruments = this.instrumentsService.instruments;
+    console.log(this.instruments);
+   }
 
   ngOnInit(): void {
   }
