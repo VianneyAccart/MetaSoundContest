@@ -1,0 +1,36 @@
+.container-fluid {
+  display: none;
+}
+
+.bi {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
+.bi-suit-heart {
+  color: #0162e0;
+}
+
+@media screen and (max-width: 768px) {
+  .bi {
+    display: inline-flex;
+  }
+
+  .container-fluid {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    height: 75px;
+    background-color: #0162e0;
+  }
+
+  .heartCircle {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: -30px;
+    border: 5px solid #0162e0;
+  }
+}
