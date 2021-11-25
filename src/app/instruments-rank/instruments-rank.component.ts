@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { InstrumentsService } from '../shared/services/instruments.service';
 
 @Component({
@@ -9,11 +8,15 @@ import { InstrumentsService } from '../shared/services/instruments.service';
 })
 export class InstrumentsRankComponent implements OnInit {
 
-  instruments: Observable<any[]>;
+  instruments: any;
+  scores: number[];
 
   constructor(private instrumentsService: InstrumentsService) {
+    this.scores = new Array();
     this.instruments = this.instrumentsService.instruments;
-    console.log(this.instruments);
+    this.instruments.forEach((instrument: any) => {
+      this.scores.push(instrument.score);
+    });
    }
 
   ngOnInit(): void {

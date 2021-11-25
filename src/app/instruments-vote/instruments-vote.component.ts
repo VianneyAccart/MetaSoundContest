@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { InstrumentsService } from '../shared/services/instruments.service';
 
 @Component({
@@ -9,11 +8,10 @@ import { InstrumentsService } from '../shared/services/instruments.service';
 })
 export class InstrumentsVoteComponent implements OnInit {
 
-  instruments: Observable<any[]>;
+  instruments: any;
 
   constructor(private instrumentsService: InstrumentsService) {
     this.instruments = this.instrumentsService.instruments;
-    console.log(this.instruments);
    }
 
   ngOnInit(): void {

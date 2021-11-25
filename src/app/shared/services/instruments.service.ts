@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class InstrumentsService {
 
-  instruments: Observable<any[]>;
+  instruments: any;
 
   constructor(store: AngularFirestore) {
-    this.instruments = store.collection('instruments').valueChanges();
+    store.collection('instruments').valueChanges().subscribe(response => {
+      this.instruments = response;
+    })
   }
 }

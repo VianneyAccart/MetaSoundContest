@@ -24,6 +24,15 @@
     cursor: pointer;
 }
 
+.leaderboardContainer {
+    padding-bottom: 75px;
+}
+
+.likesNumber {
+    font-family: "Anton", sans-serif;
+    font-size: 1.2rem;
+}
+
 @media screen and (max-width: 460px) {
     .card-img-top {
         height: 250px;

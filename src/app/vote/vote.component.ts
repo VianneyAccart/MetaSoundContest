@@ -7,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VoteComponent implements OnInit {
 
-  progressCount: number;
   progressBar: number;
 
   constructor(){
-    this.progressCount = 1;
     this.progressBar = 10;
   }
 
@@ -19,8 +17,7 @@ export class VoteComponent implements OnInit {
   }
 
   // Each time user like/disklike an instrument, progressBar and progressCount increase and fill the bar
-  increaseProgressCountBar(): void {
-    this.progressCount += 1;
+  increaseProgressBar(): void {
     this.progressBar += 10;
   }
 }
