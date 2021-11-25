@@ -58,7 +58,7 @@ ul {
     color: black;
   }
 
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 804px) {
   .nav-menu {
     display: none;
   }

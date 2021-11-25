@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) {
     this.openedMobileMenu = false;
-    this.imageSource = '/assets/logo-meta-sound-contest.jpg';
+    this.imageSource = '/assets/image/logo-meta-sound-contest.jpg';
     this.url = this.router.url;
   }
 
