@@ -1,8 +1,0 @@
-<div class="flex-col">
-    <div class="text" *ngFor="let instrument of instruments | async">
-      <h2>{{ instrument.name }}</h2>
-      <p>{{ instrument.description }}</p>
-      <p>{{ instrument.origin }}</p>
-      <img src="{{instrument.image}}" alt="image" width="250px" height="500px">
-    </div>
-</div>
