@@ -58,5 +58,11 @@ ul {
     color: black;
   }
 
+@media screen and (max-width: 781px) {
+  .header {
+    display: none;
+  }
+}
+
 
   
