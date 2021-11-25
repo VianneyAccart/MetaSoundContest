@@ -59,7 +59,7 @@ ul {
   }
 
 @media screen and (max-width: 781px) {
-  .header {
+  .nav-menu {
     display: none;
   }
 }

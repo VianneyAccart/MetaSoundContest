@@ -1,0 +1,53 @@
+.card {
+    border-radius: 10px;
+    box-shadow: 1px 3px 4px lightgray;
+    border: none;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0px 0px;
+    height: 400px;
+}
+
+.heartCircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(245, 245, 245, 0.81);
+}
+
+.bi-x-lg {
+    color: red;
+}
+
+.bi-play-fill {
+    color: #0162E0;
+}
+
+.bi-suit-heart {
+    color: #E96589;
+}
+
+.bi {
+    cursor: pointer;
+}
+
+/* .absoluteContainer {
+    position: absolute;
+}
+
+.relativeContainer {
+    position: relative;
+} */
+
+@media screen and (max-width: 460px) {
+    .card-img-top {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 460) {
+    .card-img-top {
+        height: 300px;
+    }
+}
