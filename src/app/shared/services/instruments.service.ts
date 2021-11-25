@@ -1,16 +1,32 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { Instrument } from '../models/Instrument.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class InstrumentsService {
 
-  instruments: any;
+  private dbPath = '/instruments';
 
-  constructor(store: AngularFirestore) {
-    store.collection('instruments').valueChanges().subscribe(response => {
-      this.instruments = response;
-    })
+  instrumentsRef: AngularFirestoreCollection<Instrument>;
+
+  constructor(private store: AngularFirestore) {
+    this.instrumentsRef = store.collection(this.dbPath);
   }
+
+  getAll(): AngularFirestoreCollection<Instrument> {
+    return this.instrumentsRef;
+  }
+
+  update(id: string, data: any): Promise<void> {
+    return this.instrumentsRef.doc(id).update(data);
+  }
+
+
+  // instruments: AngularFirestoreCollection<Instrument[]>;
+
+  // constructor(store: AngularFirestore) {
+  //   this.instruments = store.collection('instruments') 
+  // }
 }

@@ -1,25 +1,35 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Instrument } from '../shared/models/Instrument.model';
 import { InstrumentsService } from '../shared/services/instruments.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-instruments-rank',
   templateUrl: './instruments-rank.component.html',
-  styleUrls: ['./instruments-rank.component.css']
+  styleUrls: ['./instruments-rank.component.css'],
 })
-export class InstrumentsRankComponent implements OnInit {
+export class InstrumentsRankComponent {
+  instruments?: Instrument[];
 
-  instruments: any;
-  scores: number[];
+  constructor(private instrumentsService: InstrumentsService) {}
 
-  constructor(private instrumentsService: InstrumentsService) {
-    this.scores = new Array();
-    this.instruments = this.instrumentsService.instruments;
-    this.instruments.forEach((instrument: any) => {
-      this.scores.push(instrument.score);
-    });
-   }
-
-  ngOnInit(): void {
+  retrieveTutorials(): void {
+    this.instrumentsService
+      .getAll()
+      .snapshotChanges()
+      .pipe(
+        map((changes) =>
+          changes.map((c) => ({
+            ...c.payload.doc.data(),
+          }))
+        )
+      )
+      .subscribe((data: any) => {
+        this.instruments = data as Instrument[];
+      });
   }
 
+  ngOnInit(): void {
+    this.retrieveTutorials();
+  }
 }
