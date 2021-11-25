@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "meta-sound-contest": {
+      "hosting": {
+        "meta-sound-contest": [
+          "meta-sound-contest"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "meta-sound-contest"
+  }
+}
