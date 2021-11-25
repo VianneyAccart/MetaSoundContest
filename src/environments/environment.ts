@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
+  firebase: {
     apiKey: "AIzaSyC39Z7Mrpoj3HvaT2HTM30gILkmZLInG7g",
     authDomain: "meta-sound-contest.firebaseapp.com",
     projectId: "meta-sound-contest",

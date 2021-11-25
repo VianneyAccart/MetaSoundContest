@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { environment } from '../environments/environment';
+import { environment } from '../environments/environment.prod';
 import {AngularFireModule} from "@angular/fire/compat";
 import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import { HeaderComponent } from './header/header.component';
@@ -29,7 +29,7 @@ import { InstrumentsRankComponent } from './instruments-rank/instruments-rank.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule
   ],
   providers: [],
