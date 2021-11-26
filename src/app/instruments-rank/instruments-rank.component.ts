@@ -13,7 +13,7 @@ export class InstrumentsRankComponent {
 
   constructor(private instrumentsService: InstrumentsService) {}
 
-  retrieveTutorials(): void {
+  retrieveInstruments(): void {
     this.instrumentsService
       .getAll()
       .snapshotChanges()
@@ -26,10 +26,11 @@ export class InstrumentsRankComponent {
       )
       .subscribe((data: any) => {
         this.instruments = data as Instrument[];
+        this.instruments.sort((a:any, b:any) => b.score - a.score );
       });
   }
 
   ngOnInit(): void {
-    this.retrieveTutorials();
+    this.retrieveInstruments();
   }
 }
