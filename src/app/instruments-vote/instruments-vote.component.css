@@ -10,7 +10,8 @@
 
 .card-img-top {
     border-radius: 10px 10px 0px 0px;
-    height: 400px;
+    height: 250px;
+    width: auto;
 }
 
 .iconCircle {
@@ -40,25 +41,36 @@
     padding-bottom: 75px;
 }
 
-@media screen and (max-width: 460px) {
-    .card-img-top {
-        height: 250px;
-        width: auto;
-    }
-    .card{
-        width: 300px;
-        margin-right: 3rem;
-    }
-    .instrumentsContainer{
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-       
-    }
-  
+.card{
+    width: 300px;
+    margin-right: 3rem;
+}
+.instrumentsContainer{
+    display: flex;
+    flex-direction: row;
+    overflow-x:hidden;
 }
 
-@media screen and (min-width: 460) {
+h2 {
+    font-size: 1.2rem;
+}
+
+.thanks {
+    font-size: 3rem;
+    font-family: "Anton", sans-serif;
+}
+
+.finalPopup {
+    margin-top: -60px;
+}
+
+.btn {
+    height: 60px;
+    width: 250px;
+    font-size: 1.3rem;
+}
+
+@media screen and (min-width: 460px) {
     .card-img-top {
         height: 300px;
     }
