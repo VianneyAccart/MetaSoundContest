@@ -1,0 +1,41 @@
+.container {
+  padding-top: 150px;
+}
+
+h1 {
+  font-size: 8rem;
+  font-family: "Anton", sans-serif;
+  color: #0162e0;
+  z-index: 1;
+}
+a {
+  z-index: 1;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.btn {
+  border-radius: 3rem;
+  width: 150px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+
+img {
+  bottom: 0;
+  position: fixed;
+  opacity: 20%;
+  max-height: 700px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}

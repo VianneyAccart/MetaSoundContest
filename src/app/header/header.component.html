@@ -1,1 +1,16 @@
-<p>header works!</p>
+<header class="header">
+    <nav class="navbar">
+        <a routerLink=""><img [src]="imageSource" alt="logo" class="nav-logo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item ">
+                <a routerLink="/vote" class="nav-link blueBox">VOTE</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/" class="nav-link linkNav">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/leaderboard" class="nav-link linkNav">LEADERBOARD</a>
+            </li>
+        </ul>
+    </nav>
+</header>

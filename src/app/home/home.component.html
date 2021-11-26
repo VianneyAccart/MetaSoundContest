@@ -1,1 +1,31 @@
-<p>home works!</p>
+<app-header></app-header>
+<div class="container">
+  <div class="row d-flex align-items-center firstBloc">
+    <h1 class="col-10 col-md-6">
+      Choose your favorite instrument for the first
+      <span class="meta">Meta</span> concert.
+    </h1>
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+      <img src="/assets/image/instruments.png" class="img-fluid" />
+    </div>
+  </div>
+
+  <div class="row d-flex align-items-center secondBloc">
+    <div class="col-12 col-md-12 col-lg-12 col-xl-6 mb-5">
+      <video class="video col-12" controls src="/assets/videos/mark.mov" allowfullscreen></video>
+    </div>
+
+    <div class="col-11 col-md-12 col-lg-12 col-xl-6">
+      <h2 class="pb-4">Why <span class="meta">Meta</span> Sound Contest ?</h2>
+      <p>
+        The Meta team would like to ask you to vote for the unusual instrument
+        that will be used in the first Metavers concert. Simply vote and...
+        that's it !
+      </p>
+      <a routerLink="/vote"><button type="button" class="btn btn-primary btn-lg mt-3">
+          <span class="buttonText">Let's participate !</span>
+        </button></a>
+    </div>
+  </div>
+</div>
+<app-smartphone-navigation></app-smartphone-navigation>

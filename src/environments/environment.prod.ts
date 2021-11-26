@@ -7,5 +7,5 @@ export const environment = {
     authDomain: 'meta-sound-contest.firebaseapp.com',
     messagingSenderId: '1036764056320',
   },
-  production: true
+  production: true,
 };
