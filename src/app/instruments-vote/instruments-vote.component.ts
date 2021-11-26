@@ -13,6 +13,7 @@ export class InstrumentsVoteComponent implements OnInit {
   instruments?: Instrument[];
   progress: any;
   hiddenInstruments: string[]
+  endMessage: boolean = false;
 
   @Output() progressBar: EventEmitter<any> = new EventEmitter;
 
@@ -70,6 +71,7 @@ export class InstrumentsVoteComponent implements OnInit {
         if (instrument.id === id) {
           index = indexId;
         }
+        if (index === 9) this.endMessage = true;
       });
       let score = (this.instruments[index].score += 1);
       const updatedScore = {
@@ -92,6 +94,7 @@ export class InstrumentsVoteComponent implements OnInit {
         if (instrument.id === id) {
           index = indexId;
         }
+        if (index === 9) this.endMessage = true;
       });
       let score = (this.instruments[index].score -= 1);
       const updatedScore = {

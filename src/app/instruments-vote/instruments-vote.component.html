@@ -1,6 +1,6 @@
-<div class="instrumentsContainer">
-    <div *ngFor="let instrument of instruments; index as i" class="mb-5 d-flex justify-content-center">
-        <div [ngClass]="{'isHidden' : hiddenInstruments.indexOf(instrument.id) != -1}" class="col-10 col-md-8 col-lg-5">
+<div class="instrumentsContainer container-fluid">
+    <div *ngFor="let instrument of instruments; index as i" class="mb-5 d-flex justify-content-start">
+        <div [ngClass]="{'isHidden' : hiddenInstruments.indexOf(instrument.id) != -1}">
             <h2 class="mb-3">{{instrument.name}}</h2>
             <div class="card">
                 <img src="{{instrument.image}}" class="card-img-top" alt="Image of {{instrument.image}}">
@@ -37,4 +37,8 @@
             </div>
         </div>
     </div>
+</div>
+<div *ngIf="endMessage" class="container d-flex flex-column align-items-center finalPopup">
+    <h3 class="mb-5 text-center thanks">Thanks for your help !</h3>
+    <a routerLink="/leaderboard"><button type="button" class="btn btn-primary">See the results</button></a>
 </div>
