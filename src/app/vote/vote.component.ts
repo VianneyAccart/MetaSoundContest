@@ -17,7 +17,7 @@ export class VoteComponent implements OnInit {
   }
 
   // Each time user like/disklike an instrument, progressBar and progressCount increase and fill the bar
-  increaseProgressBar(): void {
-    this.progressBar += 10;
+  receiveProgressBarEvolution(event: any): void {
+    this.progressBar += event;
   }
 }
