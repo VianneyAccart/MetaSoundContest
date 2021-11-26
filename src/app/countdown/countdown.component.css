@@ -1,0 +1,9 @@
+p {
+  color: white;
+  margin: 0;
+}
+
+.countdown {
+  background-color: #0162e0;
+  height: 40px;
+}
