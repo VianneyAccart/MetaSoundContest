@@ -4,10 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class DateService {
-  public setDate() {
+  // Set a expiration countdown date
+  setDate() {
     localStorage.setItem('date', 'December 1, 2021 12:00:00');
   }
-  public getDate() {
+  // Get current date
+  getDate() {
     return localStorage.getItem('date');
   }
 }

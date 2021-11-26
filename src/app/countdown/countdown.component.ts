@@ -20,6 +20,7 @@ export class CountdownComponent {
     this.futurDate = new Date(this.date).getTime();
   }
 
+  // Countdown
   x = setInterval(() => {
     const today = new Date().getTime();
 
@@ -35,6 +36,7 @@ export class CountdownComponent {
 
       this.demo = days + ' days, ' + hours + ' hours, ' + mins + ' minutes';
 
+      // What happens when vote is closed
       if (distance < 0) {
         clearInterval(this.x);
         this.demo = 'Vote is closed';

@@ -7,7 +7,9 @@ import { DateService } from './shared/services/date.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'meta-sound-contest';
+  title = 'Meta Sound Contest';
+
+  // Used to set an expiration countdown date
   constructor(private dateService: DateService) {
     this.dateService.setDate();
   }
