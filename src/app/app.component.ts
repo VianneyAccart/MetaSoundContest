@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DateService } from './shared/date.service';
+import { DateService } from './shared/services/date.service';
 
 @Component({
   selector: 'app-root',
