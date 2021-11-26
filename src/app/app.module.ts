@@ -13,6 +13,7 @@ import { VoteComponent } from './vote/vote.component';
 import { InstrumentsVoteComponent } from './instruments-vote/instruments-vote.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { InstrumentsRankComponent } from './instruments-rank/instruments-rank.component';
+import { CountdownComponent } from './countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InstrumentsRankComponent } from './instruments-rank/instruments-rank.co
     VoteComponent,
     InstrumentsVoteComponent,
     LeaderboardComponent,
-    InstrumentsRankComponent
+    InstrumentsRankComponent,
+    CountdownComponent
   ],
   imports: [
     BrowserModule,
