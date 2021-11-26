@@ -5,7 +5,7 @@
 }
 
 .card-img-top {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
     height: 400px;
 }
 
@@ -31,6 +31,16 @@
 .likesNumber {
     font-family: "Anton", sans-serif;
     font-size: 1.2rem;
+}
+
+.isFirst {
+    color: rgb(228, 170, 23);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.isFirstBorder {
+    border: 3px solid rgb(228, 170, 23);
 }
 
 @media screen and (max-width: 460px) {
