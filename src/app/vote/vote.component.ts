@@ -10,7 +10,7 @@ export class VoteComponent implements OnInit {
   progressBar: number;
 
   constructor(){
-    this.progressBar = 10;
+    this.progressBar = 0;
   }
 
   ngOnInit(): void {
