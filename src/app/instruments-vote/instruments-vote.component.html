@@ -6,7 +6,7 @@
                 <img src="{{instrument.image}}" class="card-img-top" alt="Image of {{instrument.image}}">
                 <div class="card-body">
                     <div class="row d-flex justify-content-around">
-                        <div class="iconCircle d-flex justify-content-center align-items-center">
+                        <div (click)="decreaseScore(instrument.id)" class="iconCircle d-flex justify-content-center align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                                 class="bi bi-x-lg" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -15,14 +15,14 @@
                                     d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
                             </svg>
                         </div>
-                        <div class="iconCircle d-flex justify-content-center align-items-center">
+                        <div (click)="playInstrumentSound(instrument.id)" class="iconCircle d-flex justify-content-center align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                                 class="bi bi-play-fill" viewBox="0 0 16 16">
                                 <path
                                     d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
                             </svg>
                         </div>
-                        <div class="iconCircle d-flex justify-content-center align-items-center">
+                        <div (click)="increaseScore(instrument.id)" class="iconCircle d-flex justify-content-center align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                                 class="bi bi-suit-heart" viewBox="0 0 16 16">
                                 <path

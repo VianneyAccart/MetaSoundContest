@@ -1,17 +1,28 @@
 export class Instrument {
 
-    private _id?: string;
-    private _description?: string;
-    private _image?: string;
-    private _name?: string;
-    private _origin?: string;
-    private _score?: number;
+    private _id: string;
+    private _description: string;
+    private _image: string;
+    private _name: string;
+    private _origin: string;
+    private _score: number;
+    private _sound: string;
+
+    constructor(id: string, description: string, image: string, name: string, origin: string, score: number, sound: string) {
+        this._id = id;
+        this._description = description;
+        this._image = image;
+        this._name = name;
+        this._origin = origin;
+        this._score = score;
+        this._sound = sound;
+    }
 
      /**
      * Getter description
      * @return {string}
      */
-	public get description(): string | undefined {
+	public get description(): string {
 		return this._description;
 	}
 
@@ -19,7 +30,7 @@ export class Instrument {
      * Getter image
      * @return {string}
      */
-	public get image(): string | undefined {
+	public get image(): string {
 		return this._image;
 	}
 
@@ -27,7 +38,7 @@ export class Instrument {
      * Getter name
      * @return {string}
      */
-	public get name(): string | undefined {
+	public get name(): string {
 		return this._name;
 	}
 
@@ -35,7 +46,7 @@ export class Instrument {
      * Getter origin
      * @return {string}
      */
-	public get origin(): string | undefined {
+	public get origin(): string {
 		return this._origin;
 	}
 
@@ -43,7 +54,7 @@ export class Instrument {
      * Getter score
      * @return {number}
      */
-	public get score(): number | undefined {
+	public get score(): number {
 		return this._score;
 	}
 
@@ -51,7 +62,7 @@ export class Instrument {
      * Setter description
      * @param {string} value
      */
-	public set description(value: string | undefined) {
+	public set description(value: string) {
 		this._description = value;
 	}
 
@@ -59,7 +70,7 @@ export class Instrument {
      * Setter image
      * @param {string} value
      */
-	public set image(value: string | undefined) {
+	public set image(value: string) {
 		this._image = value;
 	}
 
@@ -67,7 +78,7 @@ export class Instrument {
      * Setter name
      * @param {string} value
      */
-	public set name(value: string | undefined) {
+	public set name(value: string) {
 		this._name = value;
 	}
 
@@ -75,7 +86,7 @@ export class Instrument {
      * Setter origin
      * @param {string} value
      */
-	public set origin(value: string | undefined) {
+	public set origin(value: string) {
 		this._origin = value;
 	}
 
@@ -83,7 +94,7 @@ export class Instrument {
      * Setter score
      * @param {number} value
      */
-	public set score(value: number | undefined) {
+	public set score(value: number) {
 		this._score = value;
 	}
 
@@ -91,7 +102,7 @@ export class Instrument {
      * Getter description
      * @return {string}
      */
-	public get id(): string | undefined {
+	public get id(): string {
 		return this._id;
 	}
 
@@ -99,7 +110,23 @@ export class Instrument {
      * Setter score
      * @param {string} value
      */
-	public set id(value: string | undefined) {
+	public set id(value: string) {
 		this._id = value;
+	}
+
+     /**
+     * Getter description
+     * @return {string}
+     */
+	public get sound(): string {
+		return this._sound;
+	}
+
+            /**
+     * Setter score
+     * @param {string} value
+     */
+	public set sound(value: string) {
+		this._sound = value;
 	}
 }

@@ -17,8 +17,8 @@
   </div>
 </div>
 <div class="container">
-  <div class="row">
-    <app-instruments-vote></app-instruments-vote>
-  </div>
+    <div class="row">
+        <app-instruments-vote (progressBar)="receiveProgressBarEvolution($event)"></app-instruments-vote>
+    </div>
 </div>
 <app-smartphone-navigation></app-smartphone-navigation>
