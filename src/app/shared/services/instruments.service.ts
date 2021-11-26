@@ -22,11 +22,4 @@ export class InstrumentsService {
   update(id: string, data: any): Promise<void> {
     return this.instrumentsRef.doc(id).update(data);
   }
-
-
-  // instruments: AngularFirestoreCollection<Instrument[]>;
-
-  // constructor(store: AngularFirestore) {
-  //   this.instruments = store.collection('instruments') 
-  // }
 }

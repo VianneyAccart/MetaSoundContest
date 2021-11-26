@@ -21,6 +21,7 @@ export class InstrumentsVoteComponent implements OnInit {
         map((changes) =>
           changes.map((c) => ({
             ...c.payload.doc.data(),
+            id: c.payload.doc.id,
           }))
         )
       )
@@ -31,5 +32,25 @@ export class InstrumentsVoteComponent implements OnInit {
 
   ngOnInit(): void {
     this.retrieveTutorials()
+  }
+
+  playInstrumentSound(id: string) {
+    console.log(id)
+    const audio = new Audio();
+    // Return 
+    if (this.instruments !== undefined) {
+      let index = 0;
+      this.instruments.forEach((instrument, indexId) => {
+        if (instrument.id === id) {
+          index = indexId;
+          console.log()
+        }
+      });
+      console.log(index);
+      audio.src = this.instruments[index].sound;
+      console.log(audio.src);
+      audio.load();
+      audio.play();
+    }
   }
 }
