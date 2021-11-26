@@ -4,6 +4,10 @@
     border: none;
 }
 
+.isHidden{
+    display: none;
+}
+
 .card-img-top {
     border-radius: 10px 10px 0px 0px;
     height: 400px;
@@ -39,7 +43,19 @@
 @media screen and (max-width: 460px) {
     .card-img-top {
         height: 250px;
+        width: auto;
     }
+    .card{
+        width: 300px;
+        margin-right: 3rem;
+    }
+    .instrumentsContainer{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+       
+    }
+  
 }
 
 @media screen and (min-width: 460) {

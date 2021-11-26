@@ -12,11 +12,13 @@ import { map } from 'rxjs/operators';
 export class InstrumentsVoteComponent implements OnInit {
   instruments?: Instrument[];
   progress: any;
+  hiddenInstruments: string[]
 
   @Output() progressBar: EventEmitter<any> = new EventEmitter;
 
   constructor(private instrumentsService: InstrumentsService) {
     this.progress = 0;
+    this.hiddenInstruments = []
   }
 
   // Send a value to vote component to increase progress bar
@@ -61,6 +63,7 @@ export class InstrumentsVoteComponent implements OnInit {
   }
 
   increaseScore(id: string): void {
+    this.hideInstrument(id);
     if (this.instruments !== undefined) {
       let index = 0;
       this.instruments.forEach((instrument, indexId) => {
@@ -82,6 +85,7 @@ export class InstrumentsVoteComponent implements OnInit {
   }
 
   decreaseScore(id: string): void {
+    this.hideInstrument(id);
     if (this.instruments !== undefined) {
       let index = 0;
       this.instruments.forEach((instrument, indexId) => {
@@ -100,5 +104,8 @@ export class InstrumentsVoteComponent implements OnInit {
     this.progress += 10;
     this.sendProgressBarEvolution()
     this.progress = 0;
+  }
+  hideInstrument(id:string){
+    this.hiddenInstruments.push(id)
   }
 }
