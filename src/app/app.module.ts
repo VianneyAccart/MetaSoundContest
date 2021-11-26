@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment.prod';
-import {AngularFireModule} from "@angular/fire/compat";
-import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { HeaderComponent } from './header/header.component';
 import { SmartphoneNavigationComponent } from './smartphone-navigation/smartphone-navigation.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -26,15 +26,15 @@ import { CountdownComponent } from './countdown/countdown.component';
     InstrumentsVoteComponent,
     LeaderboardComponent,
     InstrumentsRankComponent,
-    CountdownComponent
+    CountdownComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

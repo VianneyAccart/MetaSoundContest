@@ -1,6 +1,7 @@
 <div class="leaderboardContainer container">
     <div class="row d-flex justify-content-center">
-        <div *ngFor="let instrument of instruments; index as i" class="col-12 col-md-6 mb-5 d-flex justify-content-center">
+        <div *ngFor="let instrument of instruments; index as i"
+            class="col-12 col-md-6 mb-5 d-flex justify-content-center">
             <div class="col-11">
                 <h2 [ngClass]="{'isFirst' : i === 0}" class="mb-3">{{i+1}}. {{instrument.name}}</h2>
                 <div [ngClass]="{'isFirstBorder' : i === 0}" class="card">

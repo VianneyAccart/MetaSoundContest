@@ -1,77 +1,77 @@
 .card {
-    border-radius: 10px;
-    box-shadow: 1px 3px 4px lightgray;
-    border: none;
+  border-radius: 10px;
+  box-shadow: 1px 3px 4px lightgray;
+  border: none;
 }
 
-.isHidden{
-    display: none;
+.isHidden {
+  display: none;
 }
 
 .card-img-top {
-    border-radius: 10px 10px 0px 0px;
-    height: 250px;
-    width: auto;
+  border-radius: 10px 10px 0px 0px;
+  height: 250px;
+  width: auto;
 }
 
 .iconCircle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(245, 245, 245, 0.81);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(245, 245, 245, 0.81);
 }
 
 .bi-x-lg {
-    color: red;
+  color: red;
 }
 
 .bi-play-fill {
-    color: #0162E0;
+  color: #0162e0;
 }
 
 .bi-suit-heart {
-    color: #E96589;
+  color: #e96589;
 }
 
 .bi {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .instrumentsContainer {
-    padding-bottom: 75px;
+  padding-bottom: 75px;
 }
 
-.card{
-    width: 300px;
-    margin-right: 3rem;
+.card {
+  width: 300px;
+  margin-right: 3rem;
 }
-.instrumentsContainer{
-    display: flex;
-    flex-direction: row;
-    overflow-x:hidden;
+.instrumentsContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
 }
 
 h2 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .thanks {
-    font-size: 3rem;
-    font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  font-family: "Anton", sans-serif;
 }
 
 .finalPopup {
-    margin-top: -60px;
+  margin-top: -60px;
 }
 
 .btn {
-    height: 60px;
-    width: 250px;
-    font-size: 1.3rem;
+  height: 60px;
+  width: 250px;
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 460px) {
-    .card-img-top {
-        height: 300px;
-    }
+  .card-img-top {
+    height: 300px;
+  }
 }
