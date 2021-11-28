@@ -1,5 +1,7 @@
 <div id="top"></div>
 
+## MetaSoundContest
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
