@@ -3,10 +3,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h1>MetaSoundContest</h1>
-  <!-- <a href="https://github.com/VianneyAccart/MetaSoundContest">
+<h1>MetaSoundContest</h1><br>
+
+  <a href="https://github.com/VianneyAccart/MetaSoundContest">
     <img src="src/assets/image/meta-sound-contest.png" alt="Logo">
-  </a> -->
+  </a>
 
   <p align="center">
     Description
@@ -48,7 +49,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://meta-sound-contest.web.app/)
+[![MetaSoundContest Screenshot][product-screenshot]](https://meta-sound-contest.web.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
