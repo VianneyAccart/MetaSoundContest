@@ -1,13 +1,12 @@
 <div id="top"></div>
 
-## MetaSoundContest
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/VianneyAccart/MetaSoundContest">
+<h1>MetaSoundContest</h1>
+  <!-- <a href="https://github.com/VianneyAccart/MetaSoundContest">
     <img src="src/assets/image/meta-sound-contest.png" alt="Logo">
-  </a>
+  </a> -->
 
   <p align="center">
     Description
