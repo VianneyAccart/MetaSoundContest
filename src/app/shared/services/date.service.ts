@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class DateService {
   // Set a expiration countdown date
   setDate() {
-    localStorage.setItem('date', 'December 1, 2021 12:00:00');
+    localStorage.setItem('date', 'December 31, 2022 12:00:00');
   }
   // Get current date
   getDate() {
